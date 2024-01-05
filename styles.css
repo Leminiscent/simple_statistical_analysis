@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --text-primary: #6c757d;
+    --text-secondary: #333;
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #f0f0f0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-primary);
+}
+
+.container-border {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+    color: var(--text-primary);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    border: 2px solid var(--secondary-color);
+    transition: background-image 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+}
+
+.btn-primary:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.results-container {
+    background-color: var(--bg-secondary);
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.results-container h2 {
+    color: var(--text-secondary);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
+}
+
+.results-item {
+    margin-bottom: 12px;
+}
+
+.results-item strong {
+    color: var(--text-secondary);
+    margin-right: 12px;
+}
+
+.results-item span {
+    color: var(--text-secondary);
+    font-weight: bold;
+}
